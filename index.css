@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+h1, h2, h3, p, .class {
+  color: hsl(0, 0%, 20%);
+}
+
+main > * + * {
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.main-box {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.main-box > * {
+  text-wrap: balance;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.left-box {
+  flex-basis: 25%;
+}
+
+.left-box h3 {
+  font-size: 1rem;
+}
+
+.right-box {
+  font-size: 1.2rem;
+  flex-basis: 75%;
+}
