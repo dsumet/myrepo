@@ -34,25 +34,27 @@ h1, h2, h3, p {
 
 .fortune-text {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  column-gap: 2rem;
   width: 100%;
 }
 
 .fortune-text > * {
   text-wrap: balance;
-  flex-grow: 1;
   line-height: 1.6;
 }
 
 .fortune-title {
-  flex-basis: 25%;
+  min-width: 100px;
+  flex-grow: 2;
 }
 
 .fortune-title h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .fortune-content {
+  flex-grow: 1;
+  min-width: 200px;
   font-size: 1.2rem;
-  flex-basis: 75%;
 }
