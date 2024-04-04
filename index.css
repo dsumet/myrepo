@@ -11,7 +11,7 @@ body {
 }
 
 body > * + * {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .wrapper {
@@ -32,29 +32,29 @@ h1, h2, h3, p {
   font-size: 3rem;
 }
 
-.fortune-text {
+.main-text {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   column-gap: 2rem;
-  width: 100%;
+  row-gap: 0.2rem;
 }
 
-.fortune-text > * {
-  text-wrap: balance;
-  line-height: 1.6;
-}
-
-.fortune-title {
-  min-width: 100px;
-  flex-grow: 2;
-}
-
-.fortune-title h2 {
-  font-size: 1.2rem;
-}
-
-.fortune-content {
+.main-text > * {
+  line-height: 1.5;
   flex-grow: 1;
-  min-width: 200px;
-  font-size: 1.2rem;
+}
+
+.author {
+  max-width: max-content;
+  flex-basis: 30%;
+}
+
+.quote {
+  min-width: 400px;
+  flex-basis: 50%;
+}
+
+.author h2, .quote p {
+  font-size: 1.1rem;
 }
