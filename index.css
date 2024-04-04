@@ -10,46 +10,49 @@ body {
   font-family: 'Times New Roman', serif;
 }
 
-main {
+body > * + * {
+  margin-top: 1rem;
+}
+
+.wrapper {
   max-width: 800px;
   width: 80%;
-  margin: 0 auto;
+  margin-inline: auto;
+}
+
+header {
   margin-top: 3rem;
 }
 
-h1, h2, h3, p, .class {
+h1, h2, h3, p {
   color: hsl(0, 0%, 20%);
-}
-
-main > * + * {
-  margin-top: 2rem;
 }
 
 .title {
   font-size: 3rem;
 }
 
-.main-box {
+.fortune-text {
   display: flex;
   gap: 2rem;
   width: 100%;
 }
 
-.main-box > * {
+.fortune-text > * {
   text-wrap: balance;
   flex-grow: 1;
   line-height: 1.6;
 }
 
-.left-box {
+.fortune-title {
   flex-basis: 25%;
 }
 
-.left-box h3 {
+.fortune-title h2 {
   font-size: 1rem;
 }
 
-.right-box {
+.fortune-content {
   font-size: 1.2rem;
   flex-basis: 75%;
 }
