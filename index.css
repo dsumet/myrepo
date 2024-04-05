@@ -60,3 +60,21 @@ h1, h2, h3, p {
 .author h2, .quote p {
   font-size: 1.1rem;
 }
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+}
+
+.grid-item {
+  cursor: pointer;
+  background: hsl(0, 0%, 85%);
+  aspect-ratio: 2;
+  transition: background 0.2s ease;
+}
+
+.grid-item:hover {
+  background: hsl(0, 0%, 75%);
+}
