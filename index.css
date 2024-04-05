@@ -46,13 +46,15 @@ h1, h2, h3, p {
 }
 
 .author {
-  max-width: max-content;
-  flex-basis: 30%;
+  flex-basis: fit-content;
 }
 
 .quote {
-  min-width: 400px;
-  flex-basis: 50%;
+  flex-basis: 65%;
+}
+
+.author, .quote {
+  max-width: max-content;
 }
 
 .author h2, .quote p {
